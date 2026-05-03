@@ -1,0 +1,37 @@
+# Secrets & credentials
+.env
+*.env
+*.env.*
+secrets/
+credentials/
+
+# Azure sensitive files
+*.tfvars
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+parameters.local.json
+
+# Logs
+*.log
+*.logs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VM images
+*.vmdk
+*.vhd
+*.vhdx
+
+# SSH keys
+*.pem
+*.ppk
+id_rsa
+id_rsa.pub
+
+# Temporary files
+*.tmp
+*.bak
+~$*

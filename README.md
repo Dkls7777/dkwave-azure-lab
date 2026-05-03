@@ -1,143 +1,171 @@
-#  DK WAVE TECHNOLOGY – Azure Administrator Hands-On Lab
+<p align="center">
+  <img src="https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Phases-7%2F7-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/EFREI_Paris-2025--2026-red?style=for-the-badge"/>
+</p>
+
+<h1 align="center">DK WAVE TECHNOLOGY</h1>
+<h3 align="center">Azure Administrator Hands-On Lab — Full Infrastructure Project</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Level-Junior%20to%20Mid-green?style=for-the-badge"/>
+  <em>Conception, déploiement, sécurisation et opération d'un environnement Azure de production from scratch</em>
 </p>
 
 ---
 
-## 🇫🇷 Français
+##  Objectif
 
-###  Contexte
+Ce dépôt documente un laboratoire pratique complet d'administration Azure, réalisé dans le cadre de la formation **Administrateur Systèmes & Réseaux Cloud** à l'EFREI Paris.
 
-Ce dépôt contient la documentation complète et les scripts d'un laboratoire pratique Azure réalisé dans le cadre d'une formation **Administrateur Systèmes & Réseaux Cloud**.
-
-L'entreprise fictive **DK WAVE TECHNOLOGY** est une startup éditrice de logiciels SaaS avec 20 employés, une main-d'œuvre à distance et aucun centre de données sur site. L'objectif est de concevoir, déployer, sécuriser et opérer un environnement Azure de type production **from scratch**.
-
-###  Objectifs pédagogiques
-
-- Concevoir une architecture Azure entreprise (Hub-and-Spoke)
-- Déployer une infrastructure complète via Azure CLI et le portail Azure
-- Sécuriser les identités (Entra ID, RBAC, MFA, Accès conditionnel)
-- Mettre en place le monitoring et les alertes (Azure Monitor, Log Analytics)
-- Automatiser les déploiements (Bicep, Azure CLI)
-- Implémenter une stratégie de sauvegarde et de reprise après sinistre
-- Opérer l'environnement au quotidien comme un vrai administrateur Azure
-
-###  Technologies utilisées
-
-| Domaine | Services Azure |
-|---|---|
-| Identité & Accès | Microsoft Entra ID, RBAC, MFA, Accès conditionnel |
-| Réseau | VNet, NSG, Azure Firewall, Bastion, Load Balancer, Application Gateway |
-| Calcul | Virtual Machines (Linux/Windows), Availability Sets, VM Scale Sets |
-| Stockage & Backup | Azure Storage, Recovery Services Vault, Azure Backup |
-| Sécurité | Defender for Cloud, Key Vault, WAF, Azure Policy, Resource Locks |
-| Monitoring | Azure Monitor, Log Analytics, KQL, Alertes, Dashboards |
-| Automatisation | Azure CLI, Bicep, Update Manager, Cost Management |
-| Reprise après sinistre | Azure Site Recovery, Test Failover |
-
-###  Structure du projet
-
-```
-dkwave-azure-lab/
-├── README.md                        # Ce fichier
-├── phase-01-foundations/            # Groupes de ressources, Entra ID, RBAC, MFA
-├── phase-02-network/                # VNet, sous-réseaux, NSG, Bastion, VMs
-├── phase-03-security/               # Defender, Key Vault, Firewall, WAF, Policy
-├── phase-04-monitoring/             # Log Analytics, Azure Monitor, Alertes, KQL
-├── phase-05-automation/             # Bicep, Update Manager, Cost Management
-├── phase-06-resilience/             # Backup, Recovery Vault, ASR, Failover
-├── phase-07-operations/             # Administration quotidienne, Incident Response
-└── docs/                            # Documentation architecture et procédures
-```
-
-###  Roadmap
-
-| Phase | Titre | Statut |
-|---|---|---|
-| Phase 1 | Mise en place des fondations |  Complétée |
-| Phase 2 | Infrastructure cœur |  Complétée |
-| Phase 3 | Sécurité & gouvernance |  Complétée |
-| Phase 4 | Monitoring & opérations |  En cours |
-| Phase 5 | Automatisation & optimisation |  À venir |
-| Phase 6 | Résilience & reprise après sinistre |  À venir |
-| Phase 7 | Administration quotidienne |  À venir |
-
-###  Sécurité
-
-> Aucun secret, mot de passe, clé d'API ou ID d'abonnement Azure n'est commis dans ce dépôt.
-> Tous les secrets sont gérés via **Azure Key Vault**.
+L'entreprise fictive **DK WAVE TECHNOLOGY** est une startup SaaS de 20 employés, 100 % distancielle, sans datacenter on-premise. La mission : construire une infrastructure Azure complète, sécurisée et opérationnelle **from scratch**, en respectant les standards enterprise.
 
 ---
 
-## 🇬🇧 English
+## 🗺️ Roadmap — 7 Phases
 
-###  Context
+| # | Phase | Contenu | Statut |
+|---|---|---|---|
+| 1 | [**Fondations**](./phase-01-foundations/) | Groupes de ressources · Entra ID · RBAC · MFA · Tags | ✅ Complétée |
+| 2 | [**Infrastructure Cœur**](./phase-02-network/) | VNet · NSG · Bastion · VMs · Load Balancer · Availability Set | ✅ Complétée |
+| 3 | [**Sécurité & Gouvernance**](./phase-03-security/) | Defender · Key Vault · Firewall · WAF · Policy · Locks | ✅ Complétée |
+| 4 | [**Monitoring & Opérations**](./phase-04-monitoring/) | Log Analytics · Azure Monitor · KQL · Alertes · DCR | ✅ Complétée |
+| 5 | [**Automatisation & Optimisation**](./phase-05-automation/) | Bicep IaC · Update Manager · Cost Management · Right-sizing | ✅ Complétée |
+| 6 | [**Résilience & DR**](./phase-06-resilience/) | Recovery Vault · Backup Policy · Test de restauration | ✅ Complétée |
+| 7 | [**Administration Quotidienne**](./phase-07-operations/) | Joiner/Mover/Leaver · Incident Response · Change Management | ✅ Complétée |
 
-This repository contains the full documentation and scripts of a hands-on Azure lab completed as part of a **Cloud Systems & Network Administrator** training program.
+---
 
-The fictional company **DK WAVE TECHNOLOGY** is a SaaS software startup with 20 employees, a remote workforce, and no on-premises data center. The goal is to design, deploy, secure, and operate a production-grade Azure environment **from scratch**.
+## 🏗️ Architecture déployée
 
-###  Learning Objectives
+```
+Abonnement Azure — DK WAVE TECHNOLOGY
+│
+├── rg-dkwave-shared          ← Services partagés
+│   ├── vnet-dkwave-prod      ← VNet central 10.0.0.0/16
+│   │   ├── AzureFirewallSubnet     10.0.0.0/24
+│   │   ├── GatewaySubnet           10.0.1.0/24
+│   │   ├── subnet-web              10.0.10.0/24
+│   │   ├── subnet-app              10.0.20.0/24
+│   │   ├── subnet-db               10.0.30.0/24
+│   │   ├── subnet-appgw            10.0.50.0/24
+│   │   └── AzureBastionSubnet      10.0.40.0/26
+│   ├── nsg-web / nsg-app / nsg-db
+│   ├── azfw-dkwave           ← Azure Firewall
+│   ├── bastion-dkwave        ← Accès SSH/RDP sécurisé
+│   ├── rt-dkwave-fw          ← UDR → tout le trafic via Firewall
+│   ├── law-dkwave-prod       ← Log Analytics Workspace
+│   └── rsv-dkwave-prod       ← Recovery Services Vault
+│
+├── rg-dkwave-prod            ← Production
+│   ├── vm-app01              ← Ubuntu 24.04 LTS
+│   ├── vm-web02              ← Windows Server 2025
+│   ├── avset-dkwave-prod     ← Availability Set
+│   ├── lb-dkwave-web         ← Load Balancer Standard
+│   ├── appgw-dkwave          ← Application Gateway WAF_v2
+│   └── kv-dkwave-secure      ← Key Vault (Private Endpoint)
+│
+└── rg-dkwave-nonprod         ← Dev/Test
+```
 
-- Design an enterprise Azure architecture (Hub-and-Spoke)
-- Deploy a complete infrastructure using Azure CLI and the Azure Portal
-- Secure identities (Entra ID, RBAC, MFA, Conditional Access)
-- Set up monitoring and alerting (Azure Monitor, Log Analytics)
-- Automate deployments (Bicep, Azure CLI)
-- Implement a backup and disaster recovery strategy
-- Operate the environment daily like a real Azure administrator
+### Flux de sécurité (Defense in Depth)
 
-###  Technologies Used
+```
+Internet
+    │
+    ▼
+WAF — appgw-dkwave (Prevention · OWASP CRS 2.1)
+    │
+    ▼
+Azure Firewall — azfw-dkwave (trafic sortant inspecté via UDR)
+    │
+    ▼
+NSG — nsg-web / nsg-app / nsg-db
+    │
+    ▼
+VMs privées — aucune IP publique (accès admin via Bastion uniquement)
+    │
+    ▼
+Key Vault via Private Endpoint
+```
 
-| Domain | Azure Services |
+---
+
+## 🛠️ Outils & Technologies
+
+| Domaine | Services Azure |
 |---|---|
-| Identity & Access | Microsoft Entra ID, RBAC, MFA, Conditional Access |
-| Networking | VNet, NSG, Azure Firewall, Bastion, Load Balancer, Application Gateway |
-| Compute | Virtual Machines (Linux/Windows), Availability Sets, VM Scale Sets |
-| Storage & Backup | Azure Storage, Recovery Services Vault, Azure Backup |
-| Security | Defender for Cloud, Key Vault, WAF, Azure Policy, Resource Locks |
-| Monitoring | Azure Monitor, Log Analytics, KQL, Alerts, Dashboards |
-| Automation | Azure CLI, Bicep, Update Manager, Cost Management |
-| Disaster Recovery | Azure Site Recovery, Test Failover |
+| **Identité & Accès** | Microsoft Entra ID · RBAC · MFA · Accès Conditionnel |
+| **Réseau** | VNet · NSG · Azure Firewall · UDR · Bastion · App Gateway |
+| **Calcul** | Virtual Machines · Availability Set · Load Balancer |
+| **Sécurité** | Defender for Cloud · Key Vault · WAF · Azure Policy · Resource Locks |
+| **Monitoring** | Azure Monitor · Log Analytics · KQL · Alertes · Action Groups |
+| **Automatisation** | Azure CLI · Bicep (IaC) · Azure REST API · Update Manager |
+| **FinOps** | Cost Management · Budgets · Right-sizing |
+| **DR** | Recovery Services Vault · Backup Policy · Test de restauration |
 
-### Project Structure
+---
+
+## 📁 Structure du dépôt
 
 ```
 dkwave-azure-lab/
-├── README.md                        # This file
-├── phase-01-foundations/            # Resource groups, Entra ID, RBAC, MFA
-├── phase-02-network/                # VNet, subnets, NSG, Bastion, VMs
-├── phase-03-security/               # Defender, Key Vault, Firewall, WAF, Policy
-├── phase-04-monitoring/             # Log Analytics, Azure Monitor, Alerts, KQL
-├── phase-05-automation/             # Bicep, Update Manager, Cost Management
-├── phase-06-resilience/             # Backup, Recovery Vault, ASR, Failover
-├── phase-07-operations/             # Daily administration, Incident Response
-└── docs/                            # Architecture documentation and procedures
+├── README.md                    ← Vue d'ensemble du projet
+├── .gitignore
+├── docs/
+│   └── RAPPORT-FINAL.md         ← Rapport technique complet
+├── iac/
+│   ├── main.bicep               ← Template Bicep principal
+│   ├── vm.bicep                 ← Template VM
+│   ├── prod.parameters.json     ← Paramètres Production
+│   └── nonprod.parameters.json  ← Paramètres NonProd
+├── diagrams/
+│   └── README.md                ← Schémas d'architecture
+├── screenshots/
+│   └── README.md                ← Captures de validation
+├── phase-01-foundations/        ← Identités, RBAC, MFA, Tags
+├── phase-02-network/            ← VNet, NSG, Bastion, VMs, LB
+├── phase-03-security/           ← Defender, KV, Firewall, WAF, Policy
+├── phase-04-monitoring/         ← Log Analytics, Monitor, KQL, Alertes
+├── phase-05-automation/         ← Bicep, Update Manager, Cost Mgmt
+├── phase-06-resilience/         ← RSV, Backup, Restauration
+└── phase-07-operations/         ← Admin quotidienne, IR, Change Mgmt
 ```
 
-###  Roadmap
+---
 
-| Phase | Title | Status |
-|---|---|---|
-| Phase 1 | Foundations |  Completed |
-| Phase 2 | Core Infrastructure |  Completed |
-| Phase 3 | Security & Governance | Completed |
-| Phase 4 | Monitoring & Operations |  In Progress |
-| Phase 5 | Automation & Optimization |  Upcoming |
-| Phase 6 | Resilience & Disaster Recovery |  Upcoming |
-| Phase 7 | Daily Administration |  Upcoming |
+## 💡 Points techniques remarquables
 
-###  Security Notice
+- **Azure Policy bloquante** : la policy de tags obligatoires bloquait toutes les commandes CLI standard → workaround systématique via `az rest` avec JSON complet
+- **Key Vault Soft Delete** : `kv-dkwave-prod` réservé 90 jours → renommé `kv-dkwave-secure`
+- **AzureBastionSubnet** : le lab indiquait /27 → Azure exige /26 minimum (corrigé)
+- **Cross-resource-group** : utilisation des ARM Resource IDs complets pour résoudre les références inter-RG
+- **Azure asynchrone** : un timeout client ≠ un échec serveur (validé via portail)
 
-> No secrets, passwords, API keys, or Azure subscription IDs are committed to this repository.
-> All secrets are managed through **Azure Key Vault**.
+---
+
+## 🔒 Bonnes pratiques appliquées
+
+| Principe | Application |
+|---|---|
+| **Zero Trust** | Vérification systématique à chaque couche |
+| **Least Privilege** | RBAC via groupes · jamais directement sur les utilisateurs |
+| **No Public IP on VMs** | Accès SSH/RDP exclusivement via Azure Bastion |
+| **Secrets Management** | Zéro secret en clair · tout dans Key Vault + Private Endpoint |
+| **IaC** | Templates Bicep reproductibles |
+| **Backup Testing** | Restauration complète testée et validée |
+
+---
+
+## ⚠️ Sécurité
+
+> Aucun secret, mot de passe, clé d'API, ID d'abonnement ou IP publique réelle n'est commis dans ce dépôt.  
+> Toutes les valeurs sensibles sont remplacées par `<REDACTED>` ou des placeholders.  
+> Les secrets sont gérés exclusivement via **Azure Key Vault**.
 
 ---
 
 <p align="center">
-  Made with  by <strong>Kpedetin Lancelot Sam DOSSOU</strong> · EFREI Paris · 2025-2026
+  Réalisé par <strong>Kpedetin Lancelot Sam DOSSOU</strong><br/>
+  EFREI Paris · Ingénieur 1 · 2025-2026
 </p>
