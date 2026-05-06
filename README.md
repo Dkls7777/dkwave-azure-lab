@@ -2,7 +2,7 @@
   <img src="https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Phases-7%2F7-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/EFREI_Paris-2025--2026-red?style=for-the-badge"/>
+  
 </p>
 
 <h1 align="center">DK WAVE TECHNOLOGY</h1>
