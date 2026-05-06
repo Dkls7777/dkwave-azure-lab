@@ -16,7 +16,7 @@
 
 ##  Objectif
 
-Ce dépôt documente un laboratoire pratique complet d'administration Azure, réalisé dans le cadre de la formation **Administrateur Systèmes & Réseaux Cloud** à l'EFREI Paris.
+Ce dépôt documente un laboratoire pratique complet d'administration Azure, réalisé dans le cadre de la formation **Administrateur Systèmes & Réseaux Cloud** .
 
 L'entreprise fictive **DK WAVE TECHNOLOGY** est une startup SaaS de 20 employés, 100 % distancielle, sans datacenter on-premise. La mission : construire une infrastructure Azure complète, sécurisée et opérationnelle **from scratch**, en respectant les standards enterprise.
 
@@ -167,5 +167,5 @@ dkwave-azure-lab/
 
 <p align="center">
   Réalisé par <strong>Kpedetin Lancelot Sam DOSSOU</strong><br/>
-  EFREI Paris · Ingénieur 1 · 2025-2026
+   · Ingénieur 1 · 2025-2026
 </p>
