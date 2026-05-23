@@ -5,7 +5,7 @@
   
 </p>
 
-<h1 align="center">DK WAVE TECHNOLOGY</h1>
+<h1 align="center">WAVE CONSULTINGY</h1>
 <h3 align="center">Azure Administrator Hands-On Lab — Full Infrastructure Project</h3>
 
 <p align="center">
@@ -39,7 +39,7 @@ L'entreprise fictive **DK WAVE TECHNOLOGY** est une startup SaaS de 20 employés
 ## 🏗️ Architecture déployée
 
 ```
-Abonnement Azure — DK WAVE TECHNOLOGY
+Abonnement Azure — Wave consulting
 │
 ├── rg-dkwave-shared          ← Services partagés
 │   ├── vnet-dkwave-prod      ← VNet central 10.0.0.0/16
