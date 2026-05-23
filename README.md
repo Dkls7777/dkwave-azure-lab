@@ -5,7 +5,7 @@
   
 </p>
 
-<h1 align="center">WAVE CONSULTINGY</h1>
+<h1 align="center">WAVE CONSULTING</h1>
 <h3 align="center">Azure Administrator Hands-On Lab — Full Infrastructure Project</h3>
 
 <p align="center">
