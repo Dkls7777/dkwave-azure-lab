@@ -18,7 +18,7 @@
 
 Ce dépôt documente un laboratoire pratique complet d'administration Azure, réalisé dans le cadre de la formation **Administrateur Systèmes & Réseaux Cloud** .
 
-L'entreprise fictive **DK WAVE TECHNOLOGY** est une startup SaaS de 20 employés, 100 % distancielle, sans datacenter on-premise. La mission : construire une infrastructure Azure complète, sécurisée et opérationnelle **from scratch**, en respectant les standards enterprise.
+L'entreprise  ** WAVE CONSULTING** est une startup SaaS de 20 employés, 100 % distancielle, sans datacenter on-premise. La mission : construire une infrastructure Azure complète, sécurisée et opérationnelle **from scratch**, en respectant les standards enterprise.
 
 ---
 
