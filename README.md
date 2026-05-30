@@ -22,7 +22,7 @@ L'entreprise  ** WAVE CONSULTING** est une startup SaaS de 20 employés, 100 % d
 
 ---
 
-## 🗺️ Roadmap — 7 Phases
+##  Roadmap — 7 Phases
 
 | # | Phase | Contenu | Statut |
 |---|---|---|---|
@@ -36,7 +36,7 @@ L'entreprise  ** WAVE CONSULTING** est une startup SaaS de 20 employés, 100 % d
 
 ---
 
-## 🏗️ Architecture déployée
+##  Architecture déployée
 
 ```
 Abonnement Azure — Wave consulting
@@ -106,7 +106,7 @@ Key Vault via Private Endpoint
 
 ---
 
-## 📁 Structure du dépôt
+##  Structure du dépôt
 
 ```
 dkwave-azure-lab/
@@ -134,7 +134,7 @@ dkwave-azure-lab/
 
 ---
 
-## 💡 Points techniques remarquables
+##  Points techniques remarquables
 
 - **Azure Policy bloquante** : la policy de tags obligatoires bloquait toutes les commandes CLI standard → workaround systématique via `az rest` avec JSON complet
 - **Key Vault Soft Delete** : `kv-dkwave-prod` réservé 90 jours → renommé `kv-dkwave-secure`
@@ -144,7 +144,7 @@ dkwave-azure-lab/
 
 ---
 
-## 🔒 Bonnes pratiques appliquées
+##  Bonnes pratiques appliquées
 
 | Principe | Application |
 |---|---|
@@ -157,7 +157,7 @@ dkwave-azure-lab/
 
 ---
 
-## ⚠️ Sécurité
+##  Sécurité
 
 > Aucun secret, mot de passe, clé d'API, ID d'abonnement ou IP publique réelle n'est commis dans ce dépôt.  
 > Toutes les valeurs sensibles sont remplacées par `<REDACTED>` ou des placeholders.  
