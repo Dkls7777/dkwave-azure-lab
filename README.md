@@ -91,7 +91,7 @@ Key Vault via Private Endpoint
 
 ---
 
-## 🛠️ Outils & Technologies
+##  Outils & Technologies
 
 | Domaine | Services Azure |
 |---|---|
